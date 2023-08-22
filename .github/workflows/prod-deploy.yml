@@ -3,7 +3,7 @@ name: Demo Pipeline
 on:
   push:
     branches:
-      - "develop"
+      - "master"
 
 jobs:
   build:
@@ -15,4 +15,4 @@ jobs:
 
       - name: Open the file
         run: |
-          cat dev.txt
+          cat test.txt
