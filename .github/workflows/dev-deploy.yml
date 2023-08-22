@@ -1,0 +1,18 @@
+name: Demo Pipeline
+
+on:
+  push:
+    branches:
+      - "master"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Open the file
+        run: |
+          cat test.txt
