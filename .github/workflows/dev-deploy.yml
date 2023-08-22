@@ -15,4 +15,4 @@ jobs:
 
       - name: Open the file
         run: |
-          cat test.txt
+          cat dev.txt
