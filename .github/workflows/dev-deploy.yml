@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Open the file
-        run: echo "My API_KEY is ${{ vars.TEST_VAR }}"
+        run: echo "My API_KEY is ${{ secrets.TEST_VAR }}"
