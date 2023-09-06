@@ -15,4 +15,4 @@ jobs:
 
       - name: Open the file
         run: |
-          echo "My API key is {{ secrets.API_KEY }}"
+          echo "My API key is ${{ secrets.API_KEY }}"
