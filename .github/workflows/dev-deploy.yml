@@ -8,11 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    environment: DEV
     steps:
       - name: Checkout Code
         uses: actions/checkout@v2
 
       - name: Open the file
-        run: |
-          cat dev.txt
+        run: echo "My API_KEY is ${{ vars.TEST_VAR }}"
